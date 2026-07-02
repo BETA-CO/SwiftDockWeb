@@ -107,8 +107,8 @@ body {
   height: 72px; /* taller and more spacious like sarvam */
   border: 1px solid rgba(255, 255, 255, 0.25);
   background: rgba(10, 10, 12, 0.65); /* low opacity dark background */
-  backdrop-filter: blur(24px); /* heavy blur overlay */
   -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px); /* heavy blur overlay */
   border-radius: 9999px;
   z-index: 1000;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
