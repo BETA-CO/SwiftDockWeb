@@ -863,8 +863,8 @@ function App() {
               <h3>Windows Desktop app</h3>
               <p>Runs on your computer to process commands and hotkeys. Fully optimized for Windows 10 and 11.</p>
               <div className="downloads-drawer-actions">
-                <a href="https://github.com/BETA-CO/SwiftDockDesktop/raw/main/output/SwiftDockSetup.exe" download className="downloads-drawer-btn">Download for Windows (x64)</a>
-                <a href="https://github.com/BETA-CO/SwiftDockDesktop/raw/main/output/SwiftDockSetup_ARM64.exe" download className="downloads-drawer-btn-alt">Download for Windows (ARM64)</a>
+                <a href="https://github.com/BETA-CO/SwiftDockDesktop/releases/latest" target="_blank" rel="noopener noreferrer" className="downloads-drawer-btn">Download for Windows (x64)</a>
+                <a href="https://github.com/BETA-CO/SwiftDockDesktop/releases/latest" target="_blank" rel="noopener noreferrer" className="downloads-drawer-btn-alt">Download for Windows (ARM64)</a>
               </div>
             </div>
 
@@ -873,7 +873,7 @@ function App() {
               <h3>Android Mobile App</h3>
               <p>Displays your customized grid panels. Compatible with Android 8.0 and above.</p>
               <div className="downloads-drawer-actions">
-                <a href="https://github.com/BETA-CO/SwiftDock/raw/main/release/app-release.apk" download className="downloads-drawer-btn">Download Android APK</a>
+                <a href="https://github.com/BETA-CO/SwiftDock/releases/latest/download/app-release.apk" download className="downloads-drawer-btn">Download Android APK</a>
               </div>
             </div>
 
