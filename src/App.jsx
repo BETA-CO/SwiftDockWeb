@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from 'react'
 import chatGptLogo from './assets/chatgpt.png'
 import chromeLogo from './assets/chrome.png'
 import youtubeLogo from './assets/youtube.png'
+import tabletImage from './assets/TabletImage.png'
+import mobileImage from './assets/MobileImage.jpg'
 import {
   Send,
   RefreshCw,
@@ -511,14 +513,14 @@ function App() {
           {/* Graphical layered laptop + phone + tablet mockups */}
           <div className="hero-mockups-panel">
             <ImageWithFallback
-              src="src\assets\TabletImage.png"
+              src={tabletImage}
               alt="Tablet client screenshot"
               placeholderText="Tablet Client Space"
               className={`mock-tablet ${hasScrolled ? 'visible' : ''}`}
               deviceType="tablet"
             />
             <ImageWithFallback
-              src="src\assets\MobileImage.jpg"
+              src={mobileImage}
               alt="Mobile client screenshot"
               placeholderText="Mobile Client Space"
               className={`mock-phone ${hasScrolled ? 'visible' : ''}`}
