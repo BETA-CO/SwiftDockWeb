@@ -458,6 +458,7 @@ function App() {
             <a href="#scenarios" className={activeSection === 'scenarios' ? 'active' : ''} onClick={() => setActiveSection('scenarios')}>Built for</a>
             <a href="#connect" className={activeSection === 'connect' ? 'active' : ''} onClick={() => setActiveSection('connect')}>How to Connect</a>
             <a href="#downloads" className={activeSection === 'downloads' ? 'active' : ''} onClick={() => setActiveSection('downloads')}>Download</a>
+            <a href="#support" className={activeSection === 'support' ? 'active' : ''} onClick={() => setActiveSection('support')}>Support</a>
           </nav>
           <div className="nav-actions">
             <a href="#downloads" className="btn-nav-download">Download Now</a>
@@ -483,6 +484,7 @@ function App() {
           <a href="#downloads" className={activeSection === 'downloads' ? 'active' : ''} onClick={() => { setActiveSection('downloads'); setMobileMenuOpen(false); }}>Download</a>
           <a href="#scenarios" className={activeSection === 'scenarios' ? 'active' : ''} onClick={() => { setActiveSection('scenarios'); setMobileMenuOpen(false); }}>Built for</a>
           <a href="#connect" className={activeSection === 'connect' ? 'active' : ''} onClick={() => { setActiveSection('connect'); setMobileMenuOpen(false); }}>How to Connect</a>
+          <a href="#support" className={activeSection === 'support' ? 'active' : ''} onClick={() => { setActiveSection('support'); setMobileMenuOpen(false); }}>Support</a>
         </nav>
       )}
 
@@ -506,6 +508,9 @@ function App() {
               <a href="#downloads" className="btn-hero-primary">Download Now</a>
               <a href="#features" className="btn-hero-secondary">
                 Learn More <span className="arrow-icon">→</span>
+              </a>
+              <a href="#support" className="btn-hero-support" onClick={() => setActiveSection('support')}>
+                Support the Project
               </a>
             </div>
           </div>
@@ -882,7 +887,7 @@ function App() {
       </section>
 
       {/* About Builder Section */}
-      <section className="about-builder-section reveal">
+      <section id="support" className="about-builder-section reveal">
         <div className="about-builder-container">
           <h2>Built with <span className="highlight-text-blue">Love</span>,<br />Not for Profit.</h2>
           <p className="builder-subheading">I'm 19. Built it alone. In 12 days.</p>
@@ -894,6 +899,16 @@ function App() {
             <button className="btn-builder-secondary" onClick={() => { setCurrentPage('bug'); window.scrollTo(0, 0); }}>
               Report a Bug
             </button>
+          </div>
+          <div className="chai4me-support-container" style={{ marginTop: '36px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 16px' }}>
+            <h3 style={{ color: '#FFFFFF', fontSize: '20px', fontWeight: '600', marginBottom: '8px' }}>Support the Swift Dock Project</h3>
+            <p style={{ color: '#8E8E93', fontSize: '14px', maxWidth: '420px', lineHeight: '20px', marginBottom: '18px' }}>
+              Swift Dock is 100% free and open-source. If it helps speed up your daily workflow, consider buying me a cup of chai to support ongoing development!
+            </p>
+            <a href="https://chai4.me/swiftdock" target="_blank" rel="noopener noreferrer" title="Support swiftdock on Chai4Me" style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', backgroundColor: '#ffffff', padding: '8px 32px', borderRadius: '16px', textDecoration: 'none', border: '1px solid #e5e7eb', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05)', transition: 'transform 0.2s' }}>
+              <img src="https://chai4.me/icons/wordmark.png" alt="Chai4Me" style={{ height: '32px', objectFit: 'contain', marginBottom: '4px' }} />
+              <span style={{ color: '#6b7280', fontFamily: 'sans-serif', fontSize: '14px', fontWeight: '600' }}>@swiftdock</span>
+            </a>
           </div>
         </div>
       </section>

@@ -391,6 +391,29 @@ body {
   background-color: rgba(255, 255, 255, 0.03);
 }
 
+.btn-hero-support {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 28px;
+  border-radius: 9999px;
+  border: 1px solid #00f2fe;
+  background-color: rgba(0, 242, 254, 0.02);
+  color: var(--text-white);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 10px rgba(0, 242, 254, 0.05);
+}
+
+.btn-hero-support:hover {
+  background-color: rgba(0, 242, 254, 0.08);
+  box-shadow: 0 0 18px rgba(0, 242, 254, 0.2);
+  transform: translateY(-1px);
+}
+
 .arrow-icon {
   margin-left: 6px;
 }
