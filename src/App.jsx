@@ -905,10 +905,12 @@ function App() {
             <p style={{ color: '#8E8E93', fontSize: '14px', maxWidth: '420px', lineHeight: '20px', marginBottom: '18px' }}>
               Swift Dock is 100% free and open-source. If it helps speed up your daily workflow, consider buying me a cup of chai to support ongoing development!
             </p>
-            <a href="https://chai4.me/swiftdock" target="_blank" rel="noopener noreferrer" title="Support swiftdock on Chai4Me" style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', backgroundColor: '#ffffff', padding: '8px 32px', borderRadius: '16px', textDecoration: 'none', border: '1px solid #e5e7eb', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05)', transition: 'transform 0.2s' }}>
-              <img src="https://chai4.me/icons/wordmark.png" alt="Chai4Me" style={{ height: '32px', objectFit: 'contain', marginBottom: '4px' }} />
-              <span style={{ color: '#6b7280', fontFamily: 'sans-serif', fontSize: '14px', fontWeight: '600' }}>@swiftdock</span>
-            </a>
+            <div className="chai4me-flow-wrapper">
+              <a href="https://chai4.me/swiftdock" target="_blank" rel="noopener noreferrer" title="Support swiftdock on Chai4Me" className="chai4me-flow-btn">
+                <img src="https://chai4.me/icons/wordmark.png" alt="Chai4Me" />
+                <span>@swiftdock</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

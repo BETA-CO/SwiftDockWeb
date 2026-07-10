@@ -2682,3 +2682,57 @@ body {
   }
 }
 
+
+/* Chai4Me Animated Gradient Flowing Border Button (White Button, Black/Gold Border) */
+.chai4me-flow-wrapper {
+  position: relative;
+  display: inline-flex;
+  padding: 2px; /* Border width */
+  border-radius: 20px;
+  background: linear-gradient(90deg, #000000, #BF953F, #000000, #FCF6BA, #000000);
+  background-size: 300% 100%;
+  animation: border-flow 8s linear infinite; /* Slower default speed */
+  transition: transform 0.2s ease;
+}
+
+@keyframes border-flow {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 300% 0%; }
+}
+
+.chai4me-flow-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #121216; /* Black background */
+  padding: 12px 42px; /* A little bigger */
+  border-radius: 18px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.chai4me-flow-btn img {
+  height: 36px;
+  object-fit: contain;
+  margin-bottom: 4px;
+  filter: brightness(0) invert(1); /* Turns wordmark to white */
+  opacity: 0.95;
+  transition: opacity 0.2s ease;
+}
+
+.chai4me-flow-btn span {
+  color: #FCF6BA !important; /* Gold text */
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.chai4me-flow-wrapper:hover {
+  transform: translateY(-2px) scale(1.03);
+  animation-duration: 6s; /* Slower hover speed */
+}
+
+.chai4me-flow-btn:hover {
+  background-color: #1a1a22; /* Slightly lighter black on hover */
+}
